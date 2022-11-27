@@ -12,6 +12,7 @@ async function main() {
   const multisender = await Multisender.deploy();
 
   await multisender.deployed();
+  console.log(`Deploy finished. Address: ${multisender.address}`);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
